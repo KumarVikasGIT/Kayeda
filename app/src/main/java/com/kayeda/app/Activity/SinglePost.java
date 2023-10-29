@@ -27,6 +27,7 @@ public class SinglePost extends AppCompatActivity {
         binding=ActivitySinglePostBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         service= ApiClient.getClient().create(WebService.class);
 
         String blogID=getIntent().getStringExtra("blogId");

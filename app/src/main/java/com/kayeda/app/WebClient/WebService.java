@@ -16,4 +16,8 @@ public interface WebService {
     @GET("posts/{postID}")
     Call<Item> getPost(@Path("postID") String id,
                        @Query("key") String key);
+
+    @GET("posts/search")
+    Call<BloggerPosts> searchPost(@Query("q") String q,
+                                  @Query("key") String key);
 }

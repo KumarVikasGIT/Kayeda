@@ -37,6 +37,9 @@ public class ChapterReader extends AppCompatActivity {
         setContentView(binding.getRoot());
         service = ApiClient.getClient().create(WebService.class);
 
+        binding.navigationView.setNavigationOnClickListener(v->
+                this.finish());
+
         binding.rvPage.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
 
         String blogId = getIntent().getStringExtra("blogId");
@@ -50,6 +53,7 @@ public class ChapterReader extends AppCompatActivity {
             @Override
             public void onResponse(Call<Item> call, Response<Item> response) {
                 extractImage(response.body().getContent());
+                binding.navigationView.setTitle(response.body().getTitle());
             }
 
             @Override

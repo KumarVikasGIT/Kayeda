@@ -3,32 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_margin="10dp"
     android:elevation="10dp"
     app:cardCornerRadius="10dp"
-    app:cardElevation="10dp">
+    app:cardElevation="10dp"
+    android:id="@+id/itemCard">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="10dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:cardCornerRadius="5dp">
+            app:cardCornerRadius="10dp">
 
             <ImageView
                 android:adjustViewBounds="true"
                 android:id="@+id/ivFeatureImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background" />
         </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/tvTitle"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Title"
