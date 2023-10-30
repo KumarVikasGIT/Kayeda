@@ -12,6 +12,6 @@ public class Config {
 
     public static final String BLOG_ID="9040417431576137442/";
     public static final String BASE_URL="https://www.googleapis.com/blogger/v3/blogs/9040417431576137442/";
-    public static final String BLOG_KEY="AIzaSyCG26QXfHfu2-zDXg6FMPgg-RE02cqCk80";
+    public static final String BLOG_KEY="LOLO<O<O<OOL";
 
 }
